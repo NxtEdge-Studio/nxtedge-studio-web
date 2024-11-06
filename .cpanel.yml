@@ -2,7 +2,7 @@
 deployment:
   tasks:
     - echo "Deployment triggered" > /home/heavydu2/public_html/test_deployment.txt
-    - export DEPLOYPATH=/home/nxedgestudio.com/public_html/
+    - export DEPLOYPATH=/home/nxtedgestudio.com/public_html/
     - /bin/cp -R assets $DEPLOYPATH
     - /bin/cp -R common $DEPLOYPATH
     - /bin/cp -R index.html $DEPLOYPATH
