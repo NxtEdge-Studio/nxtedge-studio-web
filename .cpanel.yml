@@ -1,0 +1,18 @@
+---
+deployment:
+  tasks:
+    - echo "Deployment triggered" > /home/heavydu2/public_html/test_deployment.txt
+    - export DEPLOYPATH=/home/nxedgestudio.com/public_html/
+    - /bin/cp -R assets $DEPLOYPATH
+    - /bin/cp -R common $DEPLOYPATH
+    - /bin/cp -R index.html $DEPLOYPATH
+    - /bin/cp -R about.html $DEPLOYPATH
+    - /bin/cp -R contact.html $DEPLOYPATH
+    - /bin/cp -R services.html $DEPLOYPATH
+    - /bin/cp -R service-details.html $DEPLOYPATH
+    - /bin/cp -R faqs.html $DEPLOYPATH
+    - /bin/cp -R blog-grid.html $DEPLOYPATH
+    - /bin/cp -R blog-details.html $DEPLOYPATH
+    - /bin/cp -R pricing.html $DEPLOYPATH
+    - /bin/cp -R portfolio.html $DEPLOYPATH
+    - /bin/cp -R project-details.html $DEPLOYPATH
